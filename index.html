@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Selector de Color RGB</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 font-weight-bold"> 🎨 Selector de Color RGB</h1>
+        
+        <div class="text-center mb-3">
+            <label for="colorPicker" class="font-weight-bold">Selecciona un color</label>
+            <input type="color" id="colorPicker" class="form-control-color">
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h5 class="font-weight-bold text-red">Rojo</h5>
+                <input type="number" id="red" class="form-control mb-2" min="0" max="255" value="0">
+                <input type="range" id="redSlider" class="form-control-range red-slider" min="0" max="255" value="0">
+            </div>
+            <div class="col-md-4">
+                <h5 class="font-weight-bold text-green">Verde</h5>
+                <input type="number" id="green" class="form-control mb-2" min="0" max="255" value="0">
+                <input type="range" id="greenSlider" class="form-control-range green-slider" min="0" max="255" value="0">
+            </div>
+            <div class="col-md-4">
+                <h5 class="font-weight-bold text-blue">Azul</h5>
+                <input type="number" id="blue" class="form-control mb-2" min="0" max="255" value="0">
+                <input type="range" id="blueSlider" class="form-control-range blue-slider" min="0" max="255" value="0">
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <div id="colorBox" class="border rounded shadow"></div>
+            <h3 id="hexCode" class="text-center mt-3 font-weight-bold">#000000</h3>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

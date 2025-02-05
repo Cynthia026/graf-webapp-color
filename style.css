@@ -1,0 +1,68 @@
+/* Fondo degradado moderno */
+body {
+    background: linear-gradient(to right, #d3eafc, #f5c6e9);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Títulos */
+h1, h3 {
+    color: #000000;
+}
+
+/* Colores de los encabezados */
+.text-red {
+    color: red;
+}
+.text-green {
+    color: green;
+}
+.text-blue {
+    color: blue;
+}
+
+/* Recuadro del color */
+#colorBox {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid #343a40;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Selector de color */
+.form-control-color {
+    height: 40px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Mejoras a los sliders */
+.form-control-range {
+    height: 10px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Colores de los sliders */
+.red-slider {
+    background: linear-gradient(to right, black, red);
+}
+.green-slider {
+    background: linear-gradient(to right, black, green);
+}
+.blue-slider {
+    background: linear-gradient(to right, black, blue);
+}
+
+/* Personalización del "thumb" en sliders */
+.form-control-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #343a40;
+    border-radius: 50%;
+    cursor: pointer;
+}
